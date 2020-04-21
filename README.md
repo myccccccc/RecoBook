@@ -22,7 +22,7 @@
 
 <img src=".\pictures\9.png" style="zoom: 33%;" />
 
-<img src="C:\Users\mayingchun\Desktop\RecoBook\pictures\10.png" style="zoom: 45%;" />
+<img src=".\pictures\10.png" style="zoom: 45%;" />
 
 ​																		  Fig.3 data distribution
 
