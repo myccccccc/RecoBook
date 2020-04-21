@@ -12,7 +12,7 @@
 
 ​	Original Goodreads Dataset can be downloaded [here](https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home?authuser=0). I only used 11219 users, 8000 books and 1590749 rating data for training, validation and test.
 
-<img src="\pictures\7.png" alt="7"  />
+<img src=".\pictures\7.png" alt="7" style="zoom:80%;" />
 
 ​																		  Fig.1 sample book data
 
@@ -73,17 +73,24 @@ self.Q[j, :] += np.array(list(map(lambda x: 0 if abs(x) > 0.1 else x, change)))
 
 ​	First, I tried different k(# of latent features) for training.
 
-![11](.\pictures\11.png) 
+<img src=".\pictures\11.png" alt="11" style="zoom:80%;" /> 
 
 <img src=".\pictures\12.png" alt="12" style="zoom: 67%;" />
 
 ​	As we can see with smaller k, we have high training error, as k increases, the training error continue to decrease. But when we look at the validation error, as k increases, the validation error will first decrease and then increase. Because with more latent features(larger k) the model might over fit to the training data, So I choose k=4 in the final MF model. (but there are still many other hyper parameters like alpha, beta and  initialization need to be tuned in the future)
 
 <img src=".\pictures\6.png" alt="6" style="zoom: 70%;" />
+
+
+
 |       | RMSE  | nDCG  | Diversity Score |
 | ----- | ----- | ----- | --------------- |
 | Train | 0.806 | 0.607 | 0.046           |
 | Test  | 0.854 | 0.688 | 0.046           |
+
+
+
+## NN
 
 
 
