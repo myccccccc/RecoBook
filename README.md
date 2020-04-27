@@ -92,10 +92,20 @@ self.Q[j, :] += np.array(list(map(lambda x: 0 if abs(x) > 0.1 else x, change)))
 
 ## NN
 
+![13](.\pictures\13.png)
 
 
 
+<img src=".\pictures\14.png" alt="14" style="zoom: 50%;" />
 
+|       | RMSE  | nDCG  | Diversity Score |
+| ----- | ----- | ----- | --------------- |
+| Train | 0.856 | 0.602 | 0.212           |
+| Test  | 0.891 | 0.686 | 0.212           |
+
+
+
+## Future work
 
 
 
